@@ -60,6 +60,6 @@ async def main():
 
 
 if __name__ == "__main__":
-    if sys.platform == "win32":
-        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+#    if sys.platform == "win32":
+#        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy()) // Uncomment if you encounter issues with asyncio on Windows for python version below 3.8
     asyncio.run(main())
